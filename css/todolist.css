@@ -1,0 +1,234 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #1a508b;
+}
+body{
+    font-family: 'Changa', sans-serif;
+    /* font */
+}
+a{
+    text-decoration: none;
+}
+p, h6{
+    color: #289672;
+}
+.heading{
+    color: #1a508b;
+    font-size: 30px;
+    text-align:center;
+    margin-top: 1%;
+    padding: 10px;
+
+}
+input::placeholder{
+    color: #1a508b;
+}
+input[type = 'text']{
+    font-weight: 600;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center; 
+    border-bottom: 2px solid #1a508b;
+    padding: 10px 15px ;
+    width: 100%;
+    outline: none;
+    color: #1a508b;
+    border-radius: 10px;
+    transition: 0.25s;
+    font-family: 'Changa', sans-serif;
+}
+input[type = 'date']{
+    border: 0;
+    background: #1a508b;
+    display: block;
+    margin: 20px auto;
+    text-align: center; 
+    border: 2px solid #1a508b;
+    padding: 10px 15px ;
+    width: 100%;
+    outline: none;
+    color: #ffff;
+    border-radius: 10px;
+    transition: 0.25s;
+    font-family: 'Changa', sans-serif;
+}
+input[type = 'submit']{
+    border: 0;
+    display: block;
+    margin: -64px 2px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    background: #1a508b;
+    color: #fff;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'Changa', sans-serif;
+    font-weight: bold;
+
+
+}
+input:focus::placeholder{
+    color: #1a508b;
+    font-weight: 900;
+}
+input[type = 'text']:focus {
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #1a508b;
+}
+input[type = 'submit']:hover{
+    color: #fff;
+    font-weight: bold;
+}
+.content{
+    padding: 0 10%;
+    margin: 40px auto 0;
+
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table thead{
+    background-color: #1a508b;
+    color: #ffff;
+    
+}
+.table thead th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #ffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #000;
+    font-size: 20px;    
+
+}
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #1a508b;
+    background-color: #eee;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #1a508b;
+}
+.table tbody tr td .btn{
+    width: 100px;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 20px;
+    opacity: 1;
+} 
+.table tbody tr td #done{
+    color:#fff; 
+    font-weight: 600; 
+    background-color: #289672;
+    border-radius: 25px;
+    text-align: center;
+
+
+}
+.table tbody tr td #now{
+    color:#fff; 
+    font-weight: 600; 
+    background-color: #1a508b;
+    border-radius: 25px;
+    text-align: center;
+
+}
+@media (max-width:768px){
+    .heading{
+        margin-top: 5%;
+        font-size: 20px;
+    }
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+    .table tr {
+        margin-bottom: 15px;
+
+    }
+    .table tbody tr td {
+        text-align: left;
+        padding-right:30%;
+        position: relative;
+
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        right: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: right;
+    }    
+    .table td, #num{
+        content: attr(data-label);
+        background-color: #1a508b;
+        color: #fff;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .table td, #note{
+        content: attr(data-label);
+        padding: 30px;
+        font-weight: 600;
+    }
+
+    input[type = 'submit']{
+        border: 0;
+        display: block;
+        margin: -64px 2px;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+        outline: none;
+        background: #1a508b;
+        color: #fff;
+        transition: 0.25s;
+        cursor: pointer;
+        font-family: 'Changa', sans-serif;
+        font-weight: bold;
+    }
+    .table tbody tr td #done{
+        color:#fff; 
+        font-weight: 600; 
+        background-color: #289672;
+        border-radius: 25px;
+        text-align: center;
+        width: 60%;
+    
+    
+    }
+    .table tbody tr td #now{
+        color:#fff; 
+        font-weight: 600; 
+        background-color: #1a508b;
+        border-radius: 25px;
+        text-align: center;
+        width: 60%;
+    
+    }
+}

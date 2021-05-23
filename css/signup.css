@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: #1a508b;
+    font-family: 'Changa', sans-serif;
+}
+.signup{
+    margin: auto;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    text-align: center;
+    border: 3px solid #fff;
+}
+.signup img{
+    width: 150px;
+    height: 150px;
+}
+.signup h1{
+    color: #1a508b;
+    font-weight: 600;   
+}
+
+.signup a{
+    text-decoration: none;
+    color: #00af91;
+}
+.signup a:hover{
+    text-decoration: none;
+    color: #1a508b;
+}
+.signup h2{
+    color: #1a508b;
+    font-family: 'Changa', sans-serif;
+    font-weight: 400;   
+}
+
+.signup p{
+    color: #1a508b;
+    font-weight: 400;
+    
+}
+.signup input[type = 'text'], .signup input[type = 'password'],.signup input[type = 'email']{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center; 
+    border: 2px solid #ddd;
+    padding: 10px 15px ;
+    width: 70%;
+    outline: none;
+    color: #1a508b;
+    border-radius: 10px;
+    transition: 0.25s;
+    font-family: 'Changa', sans-serif;
+}
+.signup input[type = 'text']:focus, .signup input[type = 'password']:focus,.signup input[type = 'email']:focus
+{
+    border-color:#1a508b;
+    font-family: 'Changa', sans-serif;
+    
+}
+
+.signup input[type = 'submit']{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center; 
+    border: 2px solid #1a508b;
+    padding: 10px 20px ;
+    width: 30%;
+    outline: none;
+    color: #1a508b;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: 'Changa', sans-serif;
+}
+.signup input[type = 'submit']:hover{
+    border: 2px solid #00af91;
+    background: #00af91;
+    color: #fff;
+}
+@media (max-width: 768px ){
+    .signup {
+        margin: auto;
+        width: 300px;
+        padding: 0px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        text-align: center;
+        border: 3px solid #fff; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
